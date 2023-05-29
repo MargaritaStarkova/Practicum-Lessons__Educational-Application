@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Api Testing</string>
+    <string name="search">Найти</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="something_went_wrong">Что то пошло не так</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/holo_red_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentA">
+
+    <TextView
+        style="@style/InfoText"
+        android:text="Это FragmentA :)" />
+    <TextView
+        android:id="@+id/track_name"
+        style="@style/InfoText"
+        android:text="Название трека" />
+
+    <!--  Из кастомизации можно указать android:orientation, будет скролиться по другому  -->
+    <!--  Ну и можете поменять стандартные вещи, такие как размер или положение на экране  -->
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/fragment_child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+    />
+
+</LinearLayout>

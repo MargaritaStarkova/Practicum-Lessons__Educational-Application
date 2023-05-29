@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestingViewHolder</string>
+    <string name="hamster_name">Хомяк Добряк</string>
+    <string name="news">Текст очень важной новости, которую точно следует прочитать.</string>
+</resources>

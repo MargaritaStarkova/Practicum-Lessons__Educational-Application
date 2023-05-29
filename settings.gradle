@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Yandex.Practicum_Lessons"
+include ':app'
+include ':18 sprint_Navigation Activity'
+include ':18 sprint_Navigation Fragment'
+include ':18 sprint_TabLayout'
+include ':18 sprint_ViewPager 2'
+include ':18 sprint_Fragment Navigation test'
+include ':17 sprint_Koin'
+include ':17 sprint_Dagger'
+include ':16 sprint_MVVM'
+include ':14 sprint_Threads'
+include ':13 sprint_RelativeLayout in code'
+include ':11 sprint_Retrofit-testing_Cats'
+include ':10 sprint_Glide'
+include ':10 sprint_ViewHolder'
+include ':10 sprint_RecyclerView'
+include ':9 sprint_Prime number(testing android)'
+include ':11 sprint_Api_Wheather'
+include ':11 sprint_Api_TranslateToYoda'
