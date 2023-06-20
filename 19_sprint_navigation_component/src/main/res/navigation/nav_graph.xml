@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.navigation_component.StartFragment"
+        android:label="fragment_choice"
+        tools:layout="@layout/fragment_choice" >
+        <action
+            android:id="@+id/action_startFragment_to_factFragment"
+            app:destination="@id/factFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/hold"
+            app:popEnterAnim="@anim/hold"
+            app:popExitAnim="@anim/fade_out"  />
+    </fragment>
+    <fragment
+        android:id="@+id/factFragment"
+        android:name="com.example.navigation_component.FactFragment"
+        android:label="fragment_fact"
+        tools:layout="@layout/fragment_fact" >
+        <action
+            android:id="@+id/action_factFragment_to_imageFragment"
+            app:destination="@id/imageFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/hold"
+            app:popEnterAnim="@anim/hold"
+            app:popExitAnim="@anim/fade_out"  />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.example.navigation_component.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
+</navigation>

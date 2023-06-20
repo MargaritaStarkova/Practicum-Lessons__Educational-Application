@@ -13,7 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Yandex.Practicum_Lessons"
-include ':app'
 include ':18 sprint_Navigation Activity'
 include ':18 sprint_Navigation Fragment'
 include ':18 sprint_TabLayout'
@@ -31,3 +30,7 @@ include ':10 sprint_RecyclerView'
 include ':9 sprint_Prime number(testing android)'
 include ':11 sprint_Api_Wheather'
 include ':11 sprint_Api_TranslateToYoda'
+include ':19_sprint_navigation_component'
+include ':19_sprint_BottomNavigationView'
+include ':20_sprint_rx_java'
+include ':20_sprint_apiWheather_RxJava'
