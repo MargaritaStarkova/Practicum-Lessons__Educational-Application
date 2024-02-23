@@ -13,5 +13,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.top_button).setOnClickListener {
             startActivity(Intent(this, SecondActivity::class.java))
         }
+
+        val progressView = findViewById<CircularProgressView>(R.id.circularProgressView)
+        progressView.setCurrentProgress(100f)
     }
 }
