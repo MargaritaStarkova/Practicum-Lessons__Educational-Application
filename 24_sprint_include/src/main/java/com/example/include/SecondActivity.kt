@@ -8,9 +8,5 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
-
-        // Настраиваем текст кнопок
-        findViewById<Button>(R.id.top_button).text = "Top button - Second Activity"
-        findViewById<Button>(R.id.bottom_button).text = "Bottom button - Second Activity"
     }
 }

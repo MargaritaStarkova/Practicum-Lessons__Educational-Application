@@ -16,16 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
     <!-- Контейнер с двумя кнопками -->
-    <include layout="@layout/buttons_container"
+    <com.example.include.ButtonsContainer
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:topButtonText="Top button - Second Activity"
+        app:bottomButtonText="Bottom button - Second Activity"
+        app:bottomButtonBackgroundColor="@color/black"
+        app:topButtonBackgroundColor="@color/design_default_color_error"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

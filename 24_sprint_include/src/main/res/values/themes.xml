@@ -3,7 +3,9 @@
     <style name="Base.Theme.YandexPracticum_Lessons" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="buttonsContainerStyle">@style/DayButtonsContainerStyle</item>
     </style>
 
     <style name="Theme.YandexPracticum_Lessons" parent="Base.Theme.YandexPracticum_Lessons" />
+
 </resources>
