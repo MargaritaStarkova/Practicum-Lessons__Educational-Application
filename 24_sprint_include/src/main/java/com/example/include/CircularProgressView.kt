@@ -6,9 +6,12 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
+import android.view.MotionEvent
 import android.view.View
 import androidx.annotation.AttrRes
 import androidx.annotation.StyleRes
+import kotlin.math.atan2
+import kotlin.math.max
 import kotlin.math.min
 
 class CircularProgressView @JvmOverloads constructor(
@@ -130,6 +133,35 @@ class CircularProgressView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) = with(canvas) {
         drawTrack(centerX, centerY, radius)
         drawProgress()
+    }
+
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+        when (event.action) {
+
+            MotionEvent.ACTION_DOWN, MotionEvent.ACTION_MOVE -> {
+                updateProgress(event.x, event.y)
+                return true
+            }
+        }
+        return super.onTouchEvent(event)
+    }
+
+    private fun updateProgress(pX: Float, pY: Float) {
+        val dy = (pY - centerY).toDouble()
+        val dx = (pX - centerX).toDouble()
+
+        var angle = Math.toDegrees(atan2(dy, dx) + (Math.PI / 2))
+
+        if (angle < 0) {
+            angle += 360
+        }
+
+        val progress = max(0.0, min(1.0, angle / 360.0))
+
+        // Вызываем наш метод изменения переменной прогресса.
+        setCurrentProgress(
+            newCurrentProgress = (progress * maxProgress).toFloat()
+        )
     }
 
     // Логика отрисовки фона
